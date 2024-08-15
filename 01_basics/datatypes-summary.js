@@ -48,4 +48,8 @@ console.log(typeof a); // object
 console.log(typeof obj); //object
 console.log(typeof func); //function
 
+//primite data types are stored in stack, this means if we assign the value of one primitive variable to another, we get a copy and not the original value
+//In case of non primitive data types, they are store in heap, this means if we assign the value of one non primitive varible to another we do not get a copy instead we get the original valule, any changes made will be reflected in both the variables.
+
+
 // https://262.ecma-international.org/5.1/#sec-11.4.3
