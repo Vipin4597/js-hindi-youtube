@@ -18,8 +18,8 @@ let state;
 // bigint
 // string => ""
 // boolean => true/false
-// null => standalone value
-// undefined => 
+// null => standalone value, basically is an object
+// undefined => when no value is assigned
 // symbol => unique
 
 
