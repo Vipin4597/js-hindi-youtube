@@ -1,5 +1,5 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// const tinderUser = new Object() //singleton object
+const tinderUser = {}  //non-singleton object
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -23,10 +23,10 @@ const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
-// const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+// const obj3 = { obj1, obj2 }  // es se object obj3 ke andar do object add ho jaenge, nested objects
+// const obj3 = Object.assign({}, obj1, obj2, obj4)  // this will return a new object with combined obj1 and obj2
 
-const obj3 = {...obj1, ...obj2}
+const obj3 = {...obj1, ...obj2}  //much more simpler way to combine multiple objects and return a new object
 // console.log(obj3);
 
 
@@ -48,12 +48,14 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser)); //return an array of objects keys
+// console.log(Object.values(tinderUser)); //return an array of objects values
+// console.log(Object.entries(tinderUser)); //
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //to check if tinderUser ahs isLoggedIn property
 
+
+//DESTRUCTURING OF OBJECTS
 
 const course = {
     coursename: "js in hindi",
@@ -63,7 +65,8 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor} = course //extracting courseInstructor from course
+const {courseInstructor: instructor} = course  //extracting courseInstructor from course but giving the courseInstructor a differnt name
 
 // console.log(courseInstructor);
 console.log(instructor);
