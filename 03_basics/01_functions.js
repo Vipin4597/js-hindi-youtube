@@ -39,8 +39,10 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
+//Rest ooperator: basically val1 and val2 ke alawa bhi agar koi input hoga agar function call ke time pr to rest operator usko ek combined array me daal dega
 function calculateCartPrice(val1, val2, ...num1){
-    return num1
+    console.log(val1, val2, num1) // 200 400 [500,2000]
+    return num1  // [500,2000]
 }
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))
