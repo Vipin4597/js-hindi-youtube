@@ -2,17 +2,17 @@ const score = 400
 // console.log(score);
 
 const balance = new Number(100)
-// console.log(balance);
+// console.log(balance);  // [Number: 100]
 
 // console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+// console.log(balance.toFixed(1)); // fix the precision value
 
 const otherNumber = 123.8966
 
 // console.log(otherNumber.toPrecision(4));
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(hundreds.toLocaleString('en-IN'));// represents the numbers in the form of commas
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 
@@ -24,9 +24,9 @@ const hundreds = 1000000
 // console.log(Math.min(4, 3, 6, 8));
 // console.log(Math.max(4, 3, 6, 8));
 
-console.log(Math.random());
-console.log((Math.random()*10) + 1);
-console.log(Math.floor(Math.random()*10) + 1);
+console.log(Math.random()); // gives value that is greater than or equal to 0 and less than 1
+console.log((Math.random()*10) + 1);  // this will give decimal value to 1 to 10, because we have added 1, otherwise it would have given value between 1 and 9 inclusive
+console.log(Math.floor(Math.random()*10) + 1); // this will give integer values only
 
 const min = 10
 const max = 20
