@@ -1,5 +1,5 @@
 // singleton
-// Object.create
+// Object.create  //object.create se singleton object bnta hai
 
 // object literals
 
@@ -18,12 +18,12 @@ const JsUser = {
 }
 
 // console.log(JsUser.email)
-// console.log(JsUser["email"])
+// console.log(JsUser["email"]) // square notation is more useful and better way to access attributes
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser)  //value cant be changed now
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
