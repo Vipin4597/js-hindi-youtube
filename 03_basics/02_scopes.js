@@ -19,9 +19,9 @@ function one(){
 
     function two(){
         const website = "youtube"
-        console.log(username);
+        console.log(username); //child function can access variables of parent function
     }
-    // console.log(website);
+    // console.log(website); //parent function can not access the variables of child
 
      two()
 
@@ -44,7 +44,7 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-console.log(addone(5))
+console.log(addone(5))  //when we are declaring a function in normal way, then we can access that function even before the declaraiton
 
 function addone(num){
     return num + 1
@@ -52,7 +52,7 @@ function addone(num){
 
 
 
-addTwo(5)
+addTwo(5) //error, becuase when we are creating a function expression by stroing the function in a variable we cant access the fucntion before its declaration
 const addTwo = function(num){
     return num + 2
 }
