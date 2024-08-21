@@ -1,3 +1,4 @@
+//for each : it is a higher order function
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( function (val){
