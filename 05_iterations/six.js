@@ -1,6 +1,6 @@
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
-
+//for e 
 // const values = coding.forEach( (item) => {
 //     //console.log(item);
 //     return item
